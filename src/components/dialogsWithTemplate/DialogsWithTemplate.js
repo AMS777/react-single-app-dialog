@@ -23,7 +23,7 @@ function DialogsWithTemplate() {
     <>
       <Card>
         <CardContent>
-          <Typography variant="h5" component="h2" gutterBottom>
+          <Typography variant="h4" component="h2" gutterBottom>
             Dialogs with template component
           </Typography>
           <Typography gutterBottom>
