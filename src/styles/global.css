@@ -14,3 +14,7 @@ code {
 .MuiDialog-paperScrollPaper {
   min-width: 33vw;
 }
+
+strong {
+  text-decoration: underline;
+}

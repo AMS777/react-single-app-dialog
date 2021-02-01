@@ -24,14 +24,17 @@ function DialogsWithTemplate() {
       <Card>
         <CardContent>
           <Typography variant="h4" component="h2" gutterBottom>
-            Dialogs with template component
+            Dialogs with template component - No Context API
           </Typography>
           <Typography gutterBottom>
-            Dialogs created with a template component. Every dialog is a different component that
-            has to be rendered.
+            Dialogs created with a template component.{' '}
+            <strong>Every dialog is a different component that has to be rendered.</strong> If there
+            are 20 dialogs in the application, 20 components are rendered.
           </Typography>
           <Typography gutterBottom>There's no need for Context API.</Typography>
-          <Typography gutterBottom>Everything works correctly.</Typography>
+          <Typography gutterBottom>
+            <strong>Everything works correctly.</strong>
+          </Typography>
         </CardContent>
         <CardActions>
           <Button onClick={dialogTemplateStaticText.open} color="primary" variant="outlined">

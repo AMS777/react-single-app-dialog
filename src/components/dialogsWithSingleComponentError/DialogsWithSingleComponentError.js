@@ -8,7 +8,7 @@ import CardActions from '@material-ui/core/CardActions';
 import Typography from '@material-ui/core/Typography';
 import Button from '@material-ui/core/Button';
 
-function DialogsWithSingleComponent() {
+function DialogsWithSingleComponentError() {
   const [dialogResult, setDialogResult] = useState();
 
   const dialogStaticText = useDialogStaticText(setDialogResult);
@@ -20,18 +20,22 @@ function DialogsWithSingleComponent() {
       <Card>
         <CardContent>
           <Typography variant="h4" component="h2" gutterBottom>
-            Dialogs with single component
+            Dialogs with single component - Context API - Error
           </Typography>
           <Typography gutterBottom>
-            Dialogs created with a single component for all the application. There is only one
-            component rendered in the application and is configured every time a dialog is needed.
+            Dialogs created with a single component for all the application.{' '}
+            <strong>There is only one dialog component rendered</strong> in the application and it's
+            configured every time a dialog is needed.
           </Typography>
           <Typography gutterBottom>
             It's configured with Context API. The structute of the code is the same as with
             templates, except for the Context API.
           </Typography>
           <Typography gutterBottom>
-            Static text works correctly. Dynamic text and forms don't work.
+            Static text works correctly.{' '}
+            <strong>
+              Dynamic text and forms don't work. Context API doesn't react to changes.
+            </strong>
           </Typography>
         </CardContent>
         <CardActions>
@@ -55,4 +59,4 @@ function DialogsWithSingleComponent() {
   );
 }
 
-export default DialogsWithSingleComponent;
+export default DialogsWithSingleComponentError;
