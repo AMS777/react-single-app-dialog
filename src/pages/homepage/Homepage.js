@@ -1,5 +1,7 @@
 import React from 'react';
 
+import DialogsWithTemplate from './DialogsWithTemplate';
+
 import Typography from '@material-ui/core/Typography';
 
 function Homepage() {
@@ -9,6 +11,7 @@ function Homepage() {
         <Typography variant="h3" component="h1" align="center" gutterBottom>
           Single app dialog with Context API
         </Typography>
+        <DialogsWithTemplate />
       </header>
     </>
   );
