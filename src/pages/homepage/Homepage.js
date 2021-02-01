@@ -1,6 +1,6 @@
 import React from 'react';
 
-import DialogsWithTemplate from './DialogsWithTemplate';
+import DialogsWithTemplate from 'components/dialogsWithTemplate';
 
 import Typography from '@material-ui/core/Typography';
 
