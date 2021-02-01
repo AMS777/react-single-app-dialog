@@ -29,7 +29,7 @@ function DialogsWithTemplate() {
           <Typography gutterBottom>
             Dialogs created with a template component.{' '}
             <strong>Every dialog is a different component that has to be rendered.</strong> If there
-            are 20 dialogs in the application, 20 components are rendered.
+            are 20 dialogs in the application, 20 components that are almost identical are rendered.
           </Typography>
           <Typography gutterBottom>There's no need for Context API.</Typography>
           <Typography gutterBottom>
