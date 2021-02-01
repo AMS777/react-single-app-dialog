@@ -1,6 +1,10 @@
-import React from 'react';
+import React, { useState } from 'react';
 
-import { useDialogTemplateStaticText } from './hooks';
+import {
+  useDialogTemplateStaticText,
+  useDialogTemplateDynamicText,
+  useDialogTemplateForm,
+} from './hooks';
 
 import Card from '@material-ui/core/Card';
 import CardContent from '@material-ui/core/CardContent';
@@ -9,7 +13,11 @@ import Typography from '@material-ui/core/Typography';
 import Button from '@material-ui/core/Button';
 
 function DialogsWithTemplate() {
-  const dialogTemplateStaticText = useDialogTemplateStaticText();
+  const [dialogResult, setDialogResult] = useState();
+
+  const dialogTemplateStaticText = useDialogTemplateStaticText(setDialogResult);
+  const dialogTemplateDynamicText = useDialogTemplateDynamicText(setDialogResult);
+  const dialogTemplateForm = useDialogTemplateForm(setDialogResult);
 
   return (
     <>
@@ -23,15 +31,28 @@ function DialogsWithTemplate() {
             has to be rendered.
           </Typography>
           <Typography gutterBottom>There's no need for Context API.</Typography>
-          <Typography gutterBottom>Everything works as expected.</Typography>
+          <Typography gutterBottom>Everything works correctly.</Typography>
         </CardContent>
         <CardActions>
           <Button onClick={dialogTemplateStaticText.open} color="primary" variant="outlined">
             Static text
           </Button>
+          <Button
+            onClick={() => dialogTemplateDynamicText.open('dynamic text')}
+            color="primary"
+            variant="outlined"
+          >
+            Dynamic text
+          </Button>
+          <Button onClick={dialogTemplateForm.open} color="primary" variant="outlined">
+            Form
+          </Button>
+          <Typography gutterBottom>Result of dialog: {dialogResult}</Typography>
         </CardActions>
       </Card>
       {dialogTemplateStaticText.Dialog}
+      {dialogTemplateDynamicText.Dialog}
+      {dialogTemplateForm.Dialog}
     </>
   );
 }
