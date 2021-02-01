@@ -33,7 +33,7 @@ function DialogsWithTemplate() {
           </Typography>
           <Typography gutterBottom>There's no need for Context API.</Typography>
           <Typography gutterBottom>
-            <strong>Everything works correctly.</strong>
+            <strong>Static text, dynamic text and forms work correctly.</strong>
           </Typography>
         </CardContent>
         <CardActions>

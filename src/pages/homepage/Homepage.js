@@ -2,6 +2,7 @@ import React from 'react';
 
 import DialogsWithTemplate from 'components/dialogsWithTemplate';
 import DialogsWithSingleComponentError from 'components/dialogsWithSingleComponentError';
+import DialogsWithSingleComponent from 'components/dialogsWithSingleComponent';
 
 import Typography from '@material-ui/core/Typography';
 
@@ -16,6 +17,7 @@ function Homepage() {
       <main>
         <DialogsWithTemplate />
         <DialogsWithSingleComponentError />
+        <DialogsWithSingleComponent />
       </main>
     </>
   );

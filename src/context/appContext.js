@@ -17,6 +17,7 @@ function AppContextProvider({ children }) {
   const appContextValue = {
     isAppDialogOpen,
     appDialogContext,
+    setAppDialogContext,
     openAppDialog,
     closeAppDialog,
   };
