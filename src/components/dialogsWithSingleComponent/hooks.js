@@ -30,7 +30,7 @@ export function useDialogDynamicText(onDialogOkCallback) {
   const [text, setText] = useState();
 
   useEffectSkipFirstRender(() => {
-    appContext.openAppDialog(dialogContext);
+    appContext.setAppDialogContext(dialogContext);
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [text]);
 
@@ -59,7 +59,7 @@ export function useDialogForm(onDialogOkCallback) {
   const [text, setText] = useState('');
 
   useEffectSkipFirstRender(() => {
-    appContext.openAppDialog(dialogContext);
+    appContext.setAppDialogContext(dialogContext);
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [text]);
 
