@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/react-single-app-dialog/static/css/main.63cb0e6c.chunk.css",
-    "main.js": "/react-single-app-dialog/static/js/main.d2edf2c9.chunk.js",
-    "main.js.map": "/react-single-app-dialog/static/js/main.d2edf2c9.chunk.js.map",
+    "main.js": "/react-single-app-dialog/static/js/main.b89aaf58.chunk.js",
+    "main.js.map": "/react-single-app-dialog/static/js/main.b89aaf58.chunk.js.map",
     "runtime-main.js": "/react-single-app-dialog/static/js/runtime-main.2cd54d11.js",
     "runtime-main.js.map": "/react-single-app-dialog/static/js/runtime-main.2cd54d11.js.map",
     "static/js/2.a0509847.chunk.js": "/react-single-app-dialog/static/js/2.a0509847.chunk.js",
@@ -15,6 +15,6 @@
     "static/js/runtime-main.2cd54d11.js",
     "static/js/2.a0509847.chunk.js",
     "static/css/main.63cb0e6c.chunk.css",
-    "static/js/main.d2edf2c9.chunk.js"
+    "static/js/main.b89aaf58.chunk.js"
   ]
 }
