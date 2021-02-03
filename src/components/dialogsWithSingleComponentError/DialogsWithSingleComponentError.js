@@ -28,7 +28,7 @@ function DialogsWithSingleComponentError() {
             configured every time a dialog is needed.
           </Typography>
           <Typography gutterBottom>
-            It's configured with Context API. The structute of the code is the same as with
+            It's configured with Context API. The structure of the code is the same as with
             templates, except for the Context API.
           </Typography>
           <Typography gutterBottom>

@@ -3,6 +3,7 @@ import React from 'react';
 import DialogsWithTemplate from 'components/dialogsWithTemplate';
 import DialogsWithSingleComponentError from 'components/dialogsWithSingleComponentError';
 import DialogsWithSingleComponent from 'components/dialogsWithSingleComponent';
+import DialogsWithSingleComponentNoContextReRender from 'components/dialogsWithSingleComponentNoContextReRender';
 
 import Typography from '@material-ui/core/Typography';
 
@@ -18,6 +19,7 @@ function Homepage() {
         <DialogsWithTemplate />
         <DialogsWithSingleComponentError />
         <DialogsWithSingleComponent />
+        <DialogsWithSingleComponentNoContextReRender />
       </main>
     </>
   );

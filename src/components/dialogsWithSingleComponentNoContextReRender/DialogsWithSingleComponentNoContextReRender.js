@@ -8,7 +8,7 @@ import CardActions from '@material-ui/core/CardActions';
 import Typography from '@material-ui/core/Typography';
 import Button from '@material-ui/core/Button';
 
-function DialogsWithSingleComponent() {
+function DialogsWithSingleComponentNoContextReRender() {
   const [dialogResult, setDialogResult] = useState();
 
   const dialogStaticText = useDialogStaticText(setDialogResult);
@@ -20,7 +20,7 @@ function DialogsWithSingleComponent() {
       <Card>
         <CardContent>
           <Typography variant="h4" component="h2" gutterBottom>
-            Dialogs with single component - Context API - Fixed
+            Dialogs with single component - Context API - No Context Re-render
           </Typography>
           <Typography gutterBottom>
             Dialogs created with a single component for all the application.{' '}
@@ -28,11 +28,17 @@ function DialogsWithSingleComponent() {
             configured every time a dialog is needed.
           </Typography>
           <Typography gutterBottom>
-            It's configured with Context API. The structure of the code is almost the same as on the
+            It's configured with Context API. The main structure of the code is similar as on the
             previous example, but{' '}
             <strong>
-              to fix the Context API no reacting to changes, the context is set manually on every
-              data change with useEffect().
+              the application dialog state has been moved from the context file to the dialog
+              component.
+            </strong>{' '}
+            The context file only contains a reference to the application dialog with useRef(), so
+            that{' '}
+            <strong>
+              it doesn't re-render when a dialog is changed, and neither the components that consume
+              it.
             </strong>
           </Typography>
           <Typography gutterBottom>
@@ -60,4 +66,4 @@ function DialogsWithSingleComponent() {
   );
 }
 
-export default DialogsWithSingleComponent;
+export default DialogsWithSingleComponentNoContextReRender;
