@@ -46,7 +46,7 @@ export function useDialogDynamicText(onDialogOkCallback) {
 
   const dialogContext = {
     title: 'Dialog with single component',
-    content: `Dynamic text doesn't work: "${text}"`,
+    content: `Dynamic text works correctly: "${text}"`,
     onOk: onDialogOk,
     onClose: closeDialog,
   };
@@ -88,7 +88,7 @@ export function useDialogForm(onDialogOkCallback) {
 
   const dialogContext = {
     title: 'Dialog with single component',
-    content: "Forms don't work.",
+    content: 'Forms work correctly.',
     contentBlock: textField,
     onOk: onDialogOk,
     onClose: closeDialog,
