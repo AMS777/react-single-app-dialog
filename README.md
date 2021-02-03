@@ -21,3 +21,9 @@ If it's done the same way that with the previous option with templates, but only
 Same as with the previous option, use a single component for all the dialogs in the application, and change its content with Context API every time a dialog is displayed in the application.
 
 But this time a render is specifically triggered when the content of the dialog changes. This works correctly.
+
+## Single application dialog with Context API - No Context Re-render
+
+Same as with the previous option, use a single component for all the dialogs in the application, and change its content with Context API every time a dialog is displayed in the application.
+
+In this option, the application dialog state has been moved from the context file to the dialog component. The context file only contains a reference to the application dialog with useRef(), so that it doesn't re-render when a dialog is changed, and neither the components that consume it.
